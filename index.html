@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Buy movie tickets today with Book A Seat!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FAVICON -->
+  <link rel="icon" href="images/favicon.ico">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- TITLE -->
+  <title>Book A Seat</title>
+</head>
+
+<body>
+
+  <!-- MOVIE CONTAINER -->
+
+  <div class="movie-container">
+    <label>Book Your Movie:</label>
+    <select id="movie">
+      <option value="15">Top Gun: Maverick: $15</option>
+      <option value="15">Black Adam: $15</option>
+      <option value="10">The Batman: $10</option>
+      <option value="15">Avatar: The Way of Water: $15</option>
+      <option value="8">Spider-Man: No Way Home: $8</option>
+      <option value="14">Dune: Part Two: $14</option>
+    </select>
+  </div>
+
+  <!-- SHOWCASE -->
+
+  <ul class="showcase">
+    <li>
+      <div class="seat"></div>
+      <small>Open</small>
+    </li>
+    <li>
+      <div class="seat selected"></div>
+      <small>Selected</small>
+    </li>
+    <li>
+      <div class="occupied"></div>
+      <small>Occupied</small>
+    </li>
+  </ul>
+
+  <!-- CONTAINER -->
+
+  <div class="container">
+
+    <div class="screen"></div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+  </div>
+
+  <!-- CONTAINER END -->
+
+  <!-- TEXT, COUNT & TOTAL -->
+
+  <p class="text">
+    You have selected <span id="count">0</span> seats for $<span id="total">0</span>
+  </p>
+
+  <!-- JAVASCRIPT -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
